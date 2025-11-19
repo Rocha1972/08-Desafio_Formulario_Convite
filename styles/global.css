@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --color-brand-light: #59B2FF;
+  --color-brand-mid: #3487CF;
+  --color-brand-dark: #1D6FB6;
+
+  --color-accent-puple: #B259FF;
+  --color-accent-fuschia: #FF59F9;
+  --color-accent-pink: #FF598B;
+  --color-accent-orange: #FF8B59;
+  --color-accent-yellow: #FFCD59;
+  --color-accent-lime: #E1FF59;
+  --color-accent-green: #59FF91;
+  --color-accent-cyan: #59FFF9;
+  --color-accent-navy: #6A59FF;
+
+  --color-feedback: #FF5959;
+
+  --color-input-base: #1C1F21;
+  --color-input-stroke: #363B40;
+  --color-input-placeholder: #869198;
+
+  --color-shape-background: #131516;
+  --color-shape-body: #212427;
+  --color-shape-button: #2D3136;
+  --color-shape-hover: #383D42;
+
+  --color-text-body: #C8CDD0;
+  --color-text-heading: #F9F9F9; 
+
+
+  --font-leckerli: "Leckerli One", cursive;
+  --font-ballo2: "Baloo 2", sans-serif;
+  --font-opensans: "Open Sans", sans-serif;  
+  --h1: 400 2.5rem/auto var(--font-leckerli);
+  --h2: 600 1.75rem/auto var(--font-baloo2);
+  --h3: 600 1.125rem/auto var(--font-baloo2);
+  --body-md: 400 1rem/auto var(--font-OpenSans);
+  --body-sm: 400 0.875rem/auto var(--font-OpenSans);
+  --body-xs: 400 0.75rem/auto var(--font-OpenSans);
+}
+
+body {
+  background-color: var(--color-shape-background);
+  color: var(--color-text-heading);
+  font: var(--body-md);
+}
+
+#convite {
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  padding: 2rem;
+  
+}
