@@ -50,12 +50,17 @@ body {
   background-color: var(--color-shape-background);
   color: var(--color-text-heading);
   font: var(--body-md);
+
+  display: flex;
+  justify-content: center;
 }
 
 #convite {
   display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 1rem;
+  grid-template-columns: 31.75% 65.08%;
+  gap: 1.25rem;
+  width: 80rem;
+  height: 100%;
 
   padding: 1.25rem;
   
