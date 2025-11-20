@@ -1,24 +1,22 @@
 aside {
-  display: block;
-  max-width: 25rem;
-  max-height: 45.5rem;
+  width: 25rem;
+  height: 45.5rem;
   padding: 2rem;
-  background-color: var(--color-shape-body);
+  background-image: url(../assets/background.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 0.75rem;
+
+  & h1 {
+    font: var(--h1);
+    color: var(--color-accent-pink);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
 }
 
 header img {
   width: 2.87rem;
-}
-
-img  {
-  border-color: 1px solid var(green);
-  width: 100%;
-}
-
-h1 {
-  font: var(--h1);
-  color: var(--color-accent-pink);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
