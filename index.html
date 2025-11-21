@@ -37,10 +37,48 @@
       <header id="title">
         Crie seu convite
       </header>
-      <div class="forms">
-        <section class="event">
-          Sobre o Evento
-        </section>
+
+      <form action method="post" enctype="multipart/form-data">
+        <fieldset class="event">
+          <legend>
+            <img src="assets/icons/calendar.svg" alt="Ícone de calendário"> Sobre o Evento
+          </legend>
+
+          <section class="event-info">
+
+            <div class="input-info">
+              <label for="title">Título</label>
+              <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Nome do evento">
+            </div>
+
+            <div class="flex">
+              <div class="input-info-flex">
+                <label for="start">Início</label>
+                <input
+                type="date"
+                name="start"
+                id="start"
+                placeholder="DD/MM/AAAA, --:--">
+              </div>
+
+              <div class="input-info-flex">
+                <label for="end">Fim</label>
+                <input
+                type="date"
+                name="start"
+                id="start"
+                placeholder="DD/MM/AAAA, --:--">
+              </div>
+
+            </div>
+
+
+          </section>          
+        </fieldset>
 
         <section class="personalization">
           Personalização
@@ -60,7 +98,7 @@
           Gerar Convite
         </button>
 
-      </div>
+      </form>
       
     </main>
 

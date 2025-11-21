@@ -40,7 +40,7 @@
   --font-opensans: "Open Sans", sans-serif;  
   --h1: 400 2.5rem/120% var(--font-leckerli);
   --h2: 600 1.75rem/120% var(--font-balloo2);
-  --h3: 600 1.125rem/120% var(--font-baloo2);
+  --h3: 600 1.125rem/120% var(--font-balloo2);
   --body-md: 400 1rem/120% var(--font-opensans);
   --body-sm: 400 0.875rem/120% var(--font-opensans);
   --body-xs: 400 0.75rem/120% var(--font-opensans);
@@ -66,8 +66,8 @@ body {
 }
 
 main {
-  display: block;
-  align-items: center;
+  /* display: block; */
+  /* align-items: center; */
 
   background-color: var(--color-shape-body);
   border-radius: 0.75rem;
