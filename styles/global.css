@@ -36,10 +36,10 @@
 
 
   --font-leckerli: "Leckerli One", cursive;
-  --font-ballo2: "Baloo 2", sans-serif;
+  --font-balloo2: "Baloo 2", sans-serif;
   --font-opensans: "Open Sans", sans-serif;  
   --h1: 400 2.5rem/120% var(--font-leckerli);
-  --h2: 600 1.75rem/120% var(--font-baloo2);
+  --h2: 600 1.75rem/120% var(--font-balloo2);
   --h3: 600 1.125rem/120% var(--font-baloo2);
   --body-md: 400 1rem/120% var(--font-opensans);
   --body-sm: 400 0.875rem/120% var(--font-opensans);
@@ -55,13 +55,21 @@ body {
   justify-content: center;
 }
 
-#convite {
+#project {
   display: grid;
   grid-template-columns: 31.75% 65.08%;
   gap: 1.25rem;
   width: 80rem;
   height: 100%;
 
-  padding: 1.25rem;
-  
+  padding: 1.25rem;  
+}
+
+main {
+  display: block;
+  align-items: center;
+
+  background-color: var(--color-shape-body);
+  border-radius: 0.75rem;
+  padding: 5rem 8.13rem 5rem;
 }
