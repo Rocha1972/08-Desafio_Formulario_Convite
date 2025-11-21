@@ -50,6 +50,7 @@ body {
   background-color: var(--color-shape-background);
   color: var(--color-text-heading);
   font: var(--body-md);
+  overflow: hidden;
 
   display: flex;
   justify-content: center;
@@ -72,4 +73,12 @@ main {
   background-color: var(--color-shape-body);
   border-radius: 0.75rem;
   padding: 5rem 8.13rem 5rem;
+
+  overflow: auto;
+}
+
+#title {
+    
+  font: var(--h2);
+  margin-bottom: 2.5rem;  
 }

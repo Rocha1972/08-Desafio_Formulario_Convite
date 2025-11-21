@@ -1,12 +1,11 @@
-form {
-  /* margin-top: 3rem; */
-}
+/* form {
+  margin-top: 3rem;
+} */
 
 fieldset {
   border: none;
   display: grid;
-  gap: 20px;
-  
+  gap: 1.5rem; 
 }
 
 legend {
@@ -30,14 +29,16 @@ input {
 
   padding: 0.75rem 1rem;
 
-  font: var(--body-md);  
+  font: var(--body-md);
+  color: var(--color-input-placeholder);
 }
 
 label {
-  display: block;
+  
   font: var(--body-sm);
   color: var(--color-text-body);
 
-  margin-bottom: 0.25rem;
+  display: block;
+  margin-bottom: 0.75rem;
   
 }

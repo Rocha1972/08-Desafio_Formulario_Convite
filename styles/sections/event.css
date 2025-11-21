@@ -1,0 +1,19 @@
+#date-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-date {
+  flex: 1;
+}
+
+
+input[type="date"] {
+  position: relative;
+
+  /* color: var(--color-input-placeholder); */
+  
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}

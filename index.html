@@ -44,45 +44,42 @@
             <img src="assets/icons/calendar.svg" alt="Ícone de calendário"> Sobre o Evento
           </legend>
 
-          <section class="event-info">
+          <div class="input-info">
+            <label for="event-name">Título</label>
+            <input
+            type="text"
+            name="event-name"
+            id="event-name"
+            placeholder="Nome do evento">
+          </div>
 
-            <div class="input-info">
-              <label for="event-name">Título</label>
+          <div id="date-flex">
+            <div class="input-date">
+              <label for="start-date">Início</label>
               <input
-              type="text"
-              name="event-name"
-              id="event-name"
-              placeholder="Nome do evento">
+              type="date"
+              name="start-date"
+              id="start-date">
             </div>
 
-            <div class="flex">
-              <div class="input-date-flex">
-                <label for="start-date">Início</label>
-                <input
-                type="date"
-                name="start-date"
-                id="start-date">
-              </div>
-
-              <div class="input-date-flex">
-                <label for="end-date">Fim</label>
-                <input
-                type="date"
-                name="end-date"
-                id="end-date">
-              </div>
-
+            <div class="input-date">
+              <label for="end-date">Fim</label>
+              <input
+              type="date"
+              name="end-date"
+              id="end-date">
             </div>
-          </section>          
+
+          </div>                   
         </fieldset>
 
-        <section class="personalization">
+        <fieldset class="personalization">
           Personalização
-        </section>
+        </fieldset>
 
-        <section class="contact">
+        <fieldset class="contact">
           Dados do contato
-        </section>
+        </fieldset>
 
         <footer>
           Li e concordo com os Termos de Serviço
