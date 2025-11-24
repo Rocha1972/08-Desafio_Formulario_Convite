@@ -23,13 +23,22 @@ input[type="date"] {
   gap: 1rem;
 }
 
-/* .input-info {
-  flex: 2;
-} */
-
-.box {
+.input-info {
+  
   display: flex;
-  /* grid-template: 2, 1fr; */
+  flex-direction: column;
+  
+}
 
+.input-box {
+  border: 1px solid var(--color-input-stroke);
+  border-radius: 0.5rem;
+  display: flex;
+  width: 100%;
+
+  & input {
+    border: none;
+    flex: 1;
+  }
 
 }
