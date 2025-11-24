@@ -17,3 +17,19 @@ input[type="date"] {
     opacity: 0;
   }
 }
+
+#info-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/* .input-info {
+  flex: 2;
+} */
+
+.box {
+  display: flex;
+  /* grid-template: 2, 1fr; */
+
+
+}

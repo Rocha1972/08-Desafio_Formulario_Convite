@@ -57,7 +57,7 @@
             <div class="input-date">
               <label for="start-date">Início</label>
               <input
-              type="date"
+              type="datetime-local"
               name="start-date"
               id="start-date">
             </div>
@@ -65,12 +65,46 @@
             <div class="input-date">
               <label for="end-date">Fim</label>
               <input
-              type="date"
+              type="datetime-local"
               name="end-date"
               id="end-date">
             </div>
+          </div>
 
-          </div>                   
+          <div id="info-flex">            
+            <div class="input-info box">
+              
+              <label for="choose">Tipo</label>
+
+              <span>
+                <input
+                type="text"
+                name="choose"
+                id="choose"
+                placeholder="Presencial">
+              </span>
+
+              <span>
+                <input
+                type="text"
+                name="kind-choose"
+                id="kind-choose"
+                placeholder="Online">
+              </span>
+
+            </div>
+
+            <div class="input-info address">
+              <label for="address-link">Local</label>
+              <input
+              type="text"
+              name="address-link"
+              id="address-link"
+              placeholder="Link ou endereço">
+            </div>
+          </div>
+
+                             
         </fieldset>
 
         <fieldset class="personalization">
