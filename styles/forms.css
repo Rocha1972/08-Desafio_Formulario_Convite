@@ -31,6 +31,10 @@ input {
 
   font: var(--body-md);
   color: var(--color-input-placeholder);
+
+  &::placeholder {
+    color: var(--color-input-placeholder);
+  }
 }
 
 label {
