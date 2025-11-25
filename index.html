@@ -71,41 +71,40 @@
             </div>
           </div>
 
-          <div id="info-flex">            
+          <div id="info-flex">
             <div class="input-info">
-              
-              <label for="choose">Tipo</label>
-              
+              <label>Tipo</label>
+          
               <div class="input-box">
-                <img src="assets/icons/building.svg" alt="Ícone de um prédio">
-                <input
-                type="text"
-                name="choose"
-                id="choose"
-                placeholder=""
-                value="Presencial">
-
-
-                <img src="assets/icons/video.svg" alt="Ícone de uma câmera de vídeo">
-                <input
-                type="text"
-                name="kind-choose"
-                id="kind-choose"
-                placeholder=""
-                value="Online">
+                
+                <!-- BOTÃO 1 -->
+                <input type="radio" name="choose" id="choose-1" value="Presencial" hidden>
+                <label for="choose-1" class="option">
+                  <img src="assets/icons/building.svg" alt="">
+                  <span>Presencial</span>
+                </label>
+                
+                <!-- BOTÃO 2 -->
+                <input type="radio" name="choose" id="choose-2" value="Online" hidden>
+                <label for="choose-2" class="option">
+                  <img src="assets/icons/video.svg" alt="">
+                  <span>Online</span>
+                </label>
+          
               </div>
-
             </div>
-
+          
             <div class="input-info">
               <label for="address-link">Local</label>
               <input
-              type="text"
-              name="address-link"
-              id="address-link"
-              placeholder="Link ou endereço">
+                type="text"
+                name="address-link"
+                id="address-link"
+                placeholder="Link ou endereço">
             </div>
-          </div>
+          </div>         
+          
+          
 
                              
         </fieldset>
