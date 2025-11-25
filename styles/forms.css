@@ -42,3 +42,12 @@ label {
   margin-bottom: 0.75rem;
   
 }
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-brand-light);
+  /* Safari */
+  outline-offset: 0.1px;
+}
