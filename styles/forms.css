@@ -5,7 +5,10 @@
 fieldset {
   border: none;
   display: grid;
-  gap: 1.5rem; 
+  gap: 1.5rem;
+  margin-top: 3rem;
+
+  overflow: auto;
 }
 
 legend {

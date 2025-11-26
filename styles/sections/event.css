@@ -63,9 +63,9 @@ input[type="datetime-local"] {
   color: var(--color-input-placeholder);
 }
 
-.input-box .option img {
+/* .input-box .option img {
   width: 16px;
-}
+} */
 
 /* Hover */
 .input-box .option:hover {
