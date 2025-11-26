@@ -24,7 +24,7 @@ input[type="datetime-local"] {
   
 }
 
-.input-info {
+.input-local {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -86,4 +86,18 @@ input[type="datetime-local"] {
   & svg path {
     stroke: var(--color-brand-light);
   }
+}
+
+textarea {
+  background-color: var(--color-input-base);
+  width: 100%;
+  max-height: 8.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-stroke);
+
+  padding: 1rem;
+
+  font: var(--body-md);
+  color: var(--color-input-placeholder);
+  resize: none;
 }
