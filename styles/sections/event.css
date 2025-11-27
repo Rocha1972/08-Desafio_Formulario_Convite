@@ -11,8 +11,6 @@
 input[type="datetime-local"] {
   position: relative;
 
-  /* color: var(--color-input-placeholder); */
-  
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
   }
