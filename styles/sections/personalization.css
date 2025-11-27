@@ -34,7 +34,7 @@
   margin-bottom: 1rem;
 }
 
-/* Cor Principal */
+/* Cor Principal -----------------------------------*/
 #color1 {
   background-color: var(--color-brand-light);
 }
@@ -87,3 +87,4 @@
   outline: 2px solid var(--color-brand-light);
   outline-offset: -2px;
 }
+/* ____________________________________________ */
