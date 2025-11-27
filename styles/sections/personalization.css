@@ -15,6 +15,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  margin-bottom: 1.75rem;
 }
 
 
@@ -23,17 +25,18 @@
   appearance: none;
   width: 40px !important;
   height: 40px !important;
-  padding: 0 !important;
-  margin: 0 !important;
   border-radius: 50% !important;
-  display: inline-block !important;
-  box-sizing: border-box !important;
+  padding: 0 !important;
   cursor: pointer;
 
   border: 6px solid var(--color-shape-button);
 }
 
-/* Cores Principais */
+.color-wrapper label {
+  margin-bottom: 1rem;
+}
+
+/* Cor Principal */
 #color1 {
   background-color: var(--color-brand-light);
 }
