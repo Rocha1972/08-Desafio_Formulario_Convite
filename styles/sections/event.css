@@ -64,7 +64,7 @@ input[type="datetime-local"] {
 /* Hover */
 .input-box .option:hover {
   background-color: var(--color-shape-hover);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-text-heading);
 
   & svg path {
