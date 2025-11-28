@@ -87,6 +87,8 @@
 }
 /* ____________________________________________ */
 
+/* Tema do evento ------------------------------*/
+
 .radio-theme {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
@@ -102,19 +104,17 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.25rem 0.25rem 1rem;
 
   border: 1px solid var(--color-input-stroke);
   border-radius: 0.5rem;
-  padding: 0.2rem;
+  
   
   & img {
     width: 100%;
     margin-bottom: 1rem;
-    border-radius: 0.25rem;
-    pointer-events: none;
+    border-radius: 0.25rem;   
   }
-  
 }
 
 .event-option input[type="radio"] {
@@ -126,17 +126,13 @@
 
 .event-option label {
   pointer-events: none;
-  
+  display: contents;
 }
 
-.event-option input[type="radio"]:hover, :focus-within {
-  background-color: greenyellow/* var(--color-shape-hover) */;
+.event-option:hover {
+  background-color: var(--color-shape-hover)
 }
 
-/* .event-option input[type="radio"]:checked + img + label,
-.event-option input[type="radio"]:checked + img {
-  border-color: var(--color-brand-light);
-  outline: 2px solid var(--color-brand-light);
-  border-radius: 0.4rem;
-} */
-
+.event-option:has(input[type="radio"]:checked) {
+  outline: 2px solid red/* var(--color-brand-light) */;  
+}
