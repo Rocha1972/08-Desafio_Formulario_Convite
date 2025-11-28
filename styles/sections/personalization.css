@@ -115,13 +115,18 @@
     margin-bottom: 1rem;
     border-radius: 0.25rem;   
   }
+
+  & input {
+    all: unset;
+    inset: 0;
+  }
+
 }
 
 .event-option input[type="radio"] {
   appearance: none;
   position: absolute;
   opacity: 0;
-  pointer-events: none;
 }
 
 .event-option label {
@@ -134,5 +139,6 @@
 }
 
 .event-option:has(input[type="radio"]:checked) {
-  outline: 2px solid red/* var(--color-brand-light) */;  
+  outline: 2px solid var(--color-brand-light);
+  outline-offset: -2px ; 
 }
