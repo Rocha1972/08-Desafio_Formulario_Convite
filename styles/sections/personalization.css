@@ -142,3 +142,37 @@
   outline: 2px solid var(--color-brand-light);
   outline-offset: -2px ; 
 }
+/* _____________________________________________ */
+
+/* Estilo --------------------------------*/
+
+#switch {
+  width: 20px;
+  position: relative;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--color-input-base) no-repeat left;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: red;
+  border: 1px solid white;
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
