@@ -7,7 +7,7 @@
 
 .main-color {
   height: 40px;
-  border-radius: 50%; /* deixa circular */
+  border-radius: 50%;
   
   display: flex;
   justify-content: center;
@@ -85,9 +85,9 @@
   outline: 2px solid var(--color-brand-light);
   outline-offset: -2px;
 }
-/* ____________________________________________ */
+/* _________________________________________ */
 
-/* Tema do evento ------------------------------*/
+/* Event Theme ------------------------------*/
 
 .radio-theme {
   display: grid;
@@ -142,37 +142,63 @@
   outline: 2px solid var(--color-brand-light);
   outline-offset: -2px ; 
 }
-/* _____________________________________________ */
+/* __________________________________________ */
 
-/* Estilo --------------------------------*/
+/* Style -------------------------------------*/
 
 #switch {
-  width: 20px;
+  width: 64px;
   position: relative;
 }
 
-#switch button {
-  width: 32px;
+#switch input {
+  display: none;
+}
+
+#switch .click-area {
+  position: absolute;
+  width: 64px;
   height: 32px;
-  background: white var(--color-input-base) no-repeat left;
+  z-index: 3; /* fica por cima e recebe o clique */
+  cursor: pointer;
+}
+
+#switch button {
+  width: 24px;
+  height: 24px;
+  background: var(--color-input-stroke) no-repeat center;
   border: 0;
-  border-radius: 50%;
+  border-radius: 50%;  
 
   position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1;
+  top: 73%;
+  left: 3px;
+  z-index: 2;
   transform: translateY(-50%);
+  transition: left 0.2s ease;
 
-  animation: slide-back 0.2s;
+  animation: slide-back 0.3s;
+  pointer-events: none;
 }
 
 #switch span {
   display: block;
   width: 64px;
-  height: 24px;
-  background: red;
-  border: 1px solid white;
-  backdrop-filter: blur(4px);
+  height: 32px;
+  background-color: var(--color-input-base);
+  border: 1px solid var(--color-input-stroke);
   border-radius: 9999px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+#switch input:checked + button {
+  background-color: var(--color-text-heading);
+  left: 36px;
+}
+
+#switch input:checked ~ span {
+  transition: 0.3s;
+  background-color: var(--color-brand-light);
 }
