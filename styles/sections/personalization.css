@@ -148,7 +148,17 @@
 
 #switch {
   width: 64px;
+  height: 32px;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#slide {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 #switch input {
@@ -159,7 +169,7 @@
   position: absolute;
   width: 64px;
   height: 32px;
-  z-index: 3; /* fica por cima e recebe o clique */
+  z-index: 5; /* fica por cima e recebe o clique */
   cursor: pointer;
 }
 
@@ -171,7 +181,7 @@
   border-radius: 50%;  
 
   position: absolute;
-  top: 73%;
+  top: 50%;
   left: 3px;
   z-index: 2;
   transform: translateY(-50%);
@@ -182,7 +192,7 @@
 }
 
 #switch span {
-  display: block;
+  /* display: block; */
   width: 64px;
   height: 32px;
   background-color: var(--color-input-base);
@@ -191,6 +201,16 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
+}
+
+#switch .labels {
+  display: flex;
+  flex-direction: column;
+  /* user-select: none; */
+
+  & span {
+    font: red;
+  }
 }
 
 #switch input:checked + button {
