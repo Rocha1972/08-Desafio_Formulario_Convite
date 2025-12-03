@@ -147,12 +147,12 @@
 /* Style -------------------------------------*/
 
 #switch {
-  width: 64px;
-  height: 32px;
+  width: auto;
+  /* height: 32px; */
   position: relative;
   display: flex;
   align-items: center;
-  gap: 12px;
+  /* gap: 0.75rem; */
 }
 
 #slide {
@@ -169,10 +169,15 @@
   position: absolute;
   width: 64px;
   height: 32px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 5; /* fica por cima e recebe o clique */
   cursor: pointer;
+  /* background: red; */
 }
 
+#switch .thumb,
 #switch button {
   width: 24px;
   height: 24px;
@@ -182,17 +187,17 @@
 
   position: absolute;
   top: 50%;
-  left: 3px;
+  left: 0.18rem;
   z-index: 2;
   transform: translateY(-50%);
-  transition: left 0.2s ease;
+  transition: left 0.2s ease, background-color 0.2s ease;;
 
-  animation: slide-back 0.3s;
+  animation: none;
   pointer-events: none;
 }
 
-#switch span {
-  /* display: block; */
+#switch .track {
+  display: block;
   width: 64px;
   height: 32px;
   background-color: var(--color-input-base);
@@ -205,20 +210,41 @@
 
 #switch .labels {
   display: flex;
-  flex-direction: column;
-  /* user-select: none; */
-
-  & span {
-    font: red;
-  }
+  justify-content: center;
+  gap: 0.5rem;
+  /* width: 80px; */
+  margin-left: 0.75rem;
+  white-space: nowrap;
 }
 
-#switch input:checked + button {
+#switch .dark {
+  margin-left: -2.6rem;
+}
+
+#switch .light,
+#switch .dark {
+  opacity: 0;
+  transition: opacity .18s, color .18s;
+  font: var(--body-sm);
+  line-height: 1;
+  user-select: none;
+}
+
+#switch input:not(:checked) ~ .labels .dark {
+  opacity: 1;
+}
+
+#switch input:checked ~ .labels .light {
+  opacity: 1;
+}
+
+#switch input:checked + button,
+#switch input:checked + .thumb {
   background-color: var(--color-text-heading);
-  left: 36px;
+  left: 36px; /* move a bolinha para o lado direito da track */
 }
 
-#switch input:checked ~ span {
-  transition: 0.3s;
+#switch input:checked ~ .track {
+  transition: background-color 0.25s;
   background-color: var(--color-brand-light);
 }
