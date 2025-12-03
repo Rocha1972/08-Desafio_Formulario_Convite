@@ -147,6 +147,7 @@
 /* Style -------------------------------------*/
 
 #switch {
+  border: 1px solid red;
   width: auto;
   /* height: 32px; */
   position: relative;
@@ -247,4 +248,62 @@
 #switch input:checked ~ .track {
   transition: background-color 0.25s;
   background-color: var(--color-brand-light);
+}
+
+/* 
+___________________________________________ */
+
+/* Cover-photo ------------------------------- */
+
+/* Arrumando o posicionamento do estilo (Claro-Escuro),
+que foi modificado quando coloquei o upload-photo */
+#style-switch {
+  border: 1px solid blue;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0fr 1fr 3fr;
+  /* display: flex; */
+  /* align-items: center; */
+
+  & #switch {
+    margin-left: -35px;
+    margin-top: 20px;
+  }  
+}
+
+#button-upload {
+  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  position: relative;
+
+  & input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    opacity: 0;
+  }  
+}
+
+.button {
+  display: flex;
+  width: 119px;
+  height: 40px;
+  border: 1px solid var(--color-input-stroke);
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+  
+  font: var(--body-sm);
+
+  align-items: center;
+  
+
+  & img {
+    width: 16px;
+    height: 16px;
+  }
+
 }
