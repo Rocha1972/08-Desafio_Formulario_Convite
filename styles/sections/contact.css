@@ -1,0 +1,22 @@
+#info-contact label {
+  margin-top: 1rem;
+}
+
+#info-digital {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+.required {
+  display: inline-block;
+  margin-top: 0.25rem;
+  gap: 1rem;
+  font: var(--body-xs);
+  color: var(--color-feedback-danger);
+  
+  & img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
