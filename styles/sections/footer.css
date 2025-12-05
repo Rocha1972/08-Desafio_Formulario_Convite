@@ -4,31 +4,50 @@ hr {
   border: none;
   height: 1px;
   background:var(--color-shape-button);
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 /* Terms */
 
 .terms {
-  border: 1px solid red;
-  /* margin-top: 1rem; */
+  /* border: 1px solid red; */
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  padding: 0.25rem 0;    
 
   & strong {
     font-weight: 600;
     color: var(--color-brand-light);
   }
+
+  label {
+    margin-left: 0.25rem;
+    margin-top: 0.2rem;
+  }
+
 }
 
-.terms-wrapper {
+.checkbox {
   position: relative;
-
+  
   & [type="checkbox"] {
     all: unset;
     position: absolute;
     inset: 0;
+    cursor: pointer;
   }
 
+  .img-checkbox {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;     
+
+    background-image: url(../../assets/icons/checkbox-default.svg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+  }
+
+  &:has(:checked) .img-checkbox {
+    background-image: url(../../assets/icons/checkbox-checked.svg);
+  }
+  
 }
