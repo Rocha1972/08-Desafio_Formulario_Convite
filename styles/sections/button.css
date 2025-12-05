@@ -1,0 +1,8 @@
+button {
+  all: unset;
+  font-weight: 600; !important
+  padding: 0.8rem;
+
+  cursor: pointer
+  
+  }
