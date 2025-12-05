@@ -1,0 +1,34 @@
+/* Linha de separação */
+
+hr {
+  border: none;
+  height: 1px;
+  background:var(--color-shape-button);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Terms */
+
+.terms {
+  border: 1px solid red;
+  /* margin-top: 1rem; */
+  display: flex;
+  align-items: flex-start;
+
+  & strong {
+    font-weight: 600;
+    color: var(--color-brand-light);
+  }
+}
+
+.terms-wrapper {
+  position: relative;
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+}
