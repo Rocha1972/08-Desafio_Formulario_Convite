@@ -13,24 +13,17 @@ hr {
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
-  padding: 0.25rem 0;    
 
   & strong {
     font-weight: 600;
     color: var(--color-brand-light);
   }
-
-  label {
-    margin-left: 0.25rem;
-    margin-top: 0.2rem;
-  }
-
 }
 
 .checkbox {
   position: relative;
   
-  & [type="checkbox"] {
+  & input[type="checkbox"] {
     all: unset;
     position: absolute;
     inset: 0;
@@ -38,8 +31,9 @@ hr {
   }
 
   .img-checkbox {
-    flex: 0 0 1.5rem;
-    height: 1.5rem;     
+    /* border: 1px solid red; */
+    flex: 0 0 1.8rem;
+    height: 2rem;
 
     background-image: url(../../assets/icons/checkbox-default.svg);
     background-repeat: no-repeat;
