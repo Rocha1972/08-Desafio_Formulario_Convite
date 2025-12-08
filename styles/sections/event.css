@@ -63,7 +63,7 @@ input[type="datetime-local"] {
 }
 
 /* Hover */
-.input-box .option:hover {
+.input-box .option:hover, .option:focus {
   background-color: var(--color-shape-hover);
   font-weight: 400;
   color: var(--color-text-heading);
