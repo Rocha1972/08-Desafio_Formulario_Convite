@@ -146,6 +146,17 @@
 
 /* Style -------------------------------------*/
 
+#style-switch {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0fr 1fr 3fr;
+
+  & #switch {
+    margin-left: -2.18rem;
+    margin-top: 1.8rem;
+  }  
+}
+
 #switch {
   width: auto;
   /* height: 32px; */
@@ -252,19 +263,6 @@
 ___________________________________________ */
 
 /* Cover-photo ------------------------------- */
-
-/* Arrumando o posicionamento do estilo (Claro-Escuro),
-que foi modificado quando coloquei o upload-photo */
-#style-switch {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 0fr 1fr 3fr;
-
-  & #switch {
-    margin-left: -2.18rem;
-    margin-top: 1.8rem;
-  }  
-}
 
 #button-upload {  
   display: flex;
