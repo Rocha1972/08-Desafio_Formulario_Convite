@@ -29,6 +29,6 @@
 
 #btn-invitation .btn-create:hover,
 #btn-invitation .btn-create:focus {
-  background-color: var(--color-brand-light);
+  background-color: var(--color-brand-mid);
 }
 
