@@ -5,7 +5,7 @@ aside {
     height: 45.5rem;
 
     padding: 2rem;
-    background-image: url(../assets/background.png);
+    background-image: url(/assets/background.png);
     background-repeat: no-repeat;
     background-size:cover;
     border-radius: 0.75rem;    
